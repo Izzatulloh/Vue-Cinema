@@ -1,0 +1,230 @@
+@media(max-width:1180px){
+    .film_box{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .catalog{
+        gap: 30px;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    .catalog_item{
+        flex-shrink: 0;
+    }
+}
+@media(max-width:992px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    .grid_box img{
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+    .widow{
+        background-image: unset;
+        background-color: rgba(255, 255, 255, 0.671);
+    }
+}
+@media(max-width:750px) {
+  
+    .list {
+        flex-direction: column;
+        position: absolute;
+        top: -80px;
+        right: -200px;
+        background-color: rgba(4, 13, 31, 0.719);
+        padding: 50px;
+        height: 100vh;
+        align-items: center;
+        transition: 0.5s all linear;
+    }
+
+    .nav_link {
+        margin: 0;
+    }
+    .label{
+        display: block;
+    }
+  
+    #menu:checked ~ .list{
+        right: 0;
+    }
+    #menu:checked ~ body{
+        overflow: hidden;
+    }
+   
+    .close{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    .intro_title{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .intro_text{
+        font-size: 14px;
+        line-height: 20px;
+        width: 450px;
+    }
+    .footer_info{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer_text{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .grid{
+        width: 85%;
+    }
+}
+@media(max-width:600px){
+    .grid{
+        width: 100%;
+        gap: 15px;
+    }
+    .film_info{
+        flex-direction: column;
+    }
+    .widow_text{
+        width: 100%;
+        margin: 30px 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .widow img {
+        margin-top: 30px;
+        width: 400px;
+    }
+    .widow{
+        height: 400px;
+    }
+    .film_item{
+        height: 350px;
+    }
+}
+@media(max-width:500px) {
+    .widow img{
+        width: 100%;
+    }
+    .title{
+        font-size: 30px;
+        line-height: 35px;
+        margin: 30px 0;
+    }
+    .game_title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .game_text{
+        text-align: justify;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .game{
+        height: 400px;
+        gap: 15px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        width: 70%;
+    }
+    .box_1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .header_top i{
+        font-size: 40px;
+    }
+    .header_top p{
+        font-size: 14px;
+    }
+    .header_top{
+        height: 70px;
+    }
+   .logo{
+       font-size: 15px;
+        line-height: 18px;
+   }
+   .logo img{
+       width: 80px;
+   }
+   .label{
+       font-size: 30px;
+   }
+   .nav_info{
+       height: 80px;
+   }
+   .nav_link span{
+       padding: 25px 5px;
+   }
+   .intro_title{
+       font-size: 40px;
+       line-height: 45px;
+   }
+   .intro_text{
+       margin: 25px 0;
+       width: 380px;
+   }
+   .link{
+       width: 130px;
+       height: 40px;
+   }
+}
+@media(max-width:405px) {
+    .game_title{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .catalog_item{
+        width: 100%;
+    }
+    .widow_text{
+        margin: 15px 0;
+        line-height: 22px;
+    }
+    .grid{
+        width: 80%;
+    }
+    .intro_title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .intro_text{
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+@media(max-width:360px) {
+
+    .footer_text{
+        font-size: 14px;
+    }
+    .intro_title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .intro_item{
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+    .link{
+        margin: 0;
+    }
+    .intro_text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
